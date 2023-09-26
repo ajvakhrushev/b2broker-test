@@ -1,0 +1,14 @@
+<div class="table">
+    <div class="head">
+        <div class="row">
+            <div class="column">id</div>
+            <div class="column">color</div>
+        </div>
+    </div>
+    <div class="body">
+        <div *ngIf="data" class="row">
+            <div class="column">{{data.id}}</div>
+            <app-column-color class="column" [color]="data.color"></app-column-color>
+        </div>
+    </div>
+</div>

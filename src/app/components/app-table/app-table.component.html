@@ -1,0 +1,22 @@
+<div class="table">
+    <div class="head">
+        <div class="row">
+            <div class="column">id</div>
+            <div class="column">int</div>
+            <div class="column">float</div>
+            <div class="column">color</div>
+            <div class="column">child</div>
+        </div>
+    </div>
+    <div class="body">
+        <ng-container *ngIf="data">
+            <app-table-row
+                class="row"
+                *ngFor="let row of data; trackBy: trackByFn; let i = index"
+                [row]="row"
+                [id]="ids[i]"
+            ></app-table-row>
+        </ng-container>
+    </div>
+</div>
+

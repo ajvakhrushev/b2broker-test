@@ -1,0 +1,7 @@
+<div class="column">{{id !== undefined && id !== '' ? id : row.id}}</div>
+<div class="column">{{row.int}}</div>
+<div class="column">{{row.float | bigFloat}}</div>
+<app-column-color class="column" [color]="row.color"></app-column-color>
+<div class="column">
+    <app-child-table [data]="row.child"></app-child-table>
+</div>

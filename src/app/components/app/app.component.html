@@ -1,0 +1,12 @@
+<app-form
+  [timer]="timer$ | async"
+  [size]="size$ | async"
+  [ids]="ids$ | async"
+  (timerChange)="onTimerChange($event)"
+  (sizeChange)="onSizeChange($event)"
+  (idsChange)="onIdsChange($event)"
+></app-form>
+<app-table
+  [data]="data$ | async"
+  [ids]="ids$ | async"
+></app-table>

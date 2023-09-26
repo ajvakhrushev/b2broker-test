@@ -1,0 +1,44 @@
+:host {
+    display: block;
+    padding: 5px 20px 10px 20px;
+    font-size: 0;
+    border-bottom: 1px solid #000;
+}
+
+.timer__column,
+.size__column,
+.ids__column {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 10px 0 0;
+    font-size: 14px;
+
+    &:last-child {
+        padding-right: 0;
+    }
+}
+
+.timer__column {
+    width: 25%;
+}
+
+.size__column {
+    width: 25%;
+}
+
+.ids__column {
+    width: 50%;
+}
+
+.column__title {
+    box-sizing: border-box;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.column__control {
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+}

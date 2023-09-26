@@ -1,0 +1,48 @@
+.table {
+    padding: 0 20px 20px 20px;
+
+    .head {
+        .row {
+            .column {
+                padding: 10px 0;
+            }
+        }
+    }
+
+    .body {
+        .row {
+            margin-bottom: 20px;
+            border: 1px solid #000;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            ::ng-deep {
+                .column {
+                    box-sizing: border-box;
+                    display: inline-block;
+                    vertical-align: middle;
+                    width: 20%;
+                    font-size: 14px;
+                    text-align: center;
+                }                
+            }
+        }
+    }
+}
+
+.row {
+    display: block;
+    max-width: 100%;
+    font-size: 0;
+}
+
+.column {
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20%;
+    font-size: 14px;
+    text-align: center;
+}

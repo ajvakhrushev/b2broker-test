@@ -1,0 +1,34 @@
+<div class="timer__column">
+    <div class="column__title">Timer, ms</div>
+    <input
+        type="number"
+        name="timer"
+        class="column__control"
+        [ngModel]="timer"
+        (ngModelChange)="timerChange.emit($event)"
+    >
+</div>
+<div class="size__column">
+    <div class="column__title">Array size</div>
+    <input
+        type="number"
+        name="size"
+        class="column__control"
+        [ngModel]="size"
+        (ngModelChange)="sizeChange.emit($event)"
+    >
+</div>
+<div class="ids__column">
+    <div class="column__title">Additional array ids</div>
+    <input
+        type="text"
+        name="ids"
+        pattern="[\d\,]"
+        class="column__control"
+        [ngModel]="ids.join(',')"
+        (ngModelChange)="onIdsModelChange($event)"
+    >
+    <div *ngIf="idsError" class="column__error">
+        {{idsError}}
+    </div>
+</div>
