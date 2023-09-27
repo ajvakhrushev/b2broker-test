@@ -1,3 +1,7 @@
+!!!!! I have fullfilled all of the requirements, but did not create the unit tests for AppFormComponent and AppComponent, because of the lack of time - I have really tight schedule, unfortunately
+
+The project runs as usual - npm install && npm start
+
 # B2brokerTest
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.9.
