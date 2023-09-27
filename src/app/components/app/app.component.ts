@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Observable, Subscription } from 'rxjs';
 import { IAppRow } from 'src/app/models/AppRow';
 import { AppService } from 'src/app/services/app/app.service';
@@ -8,7 +8,7 @@ import { AppService } from 'src/app/services/app/app.service';
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, OnDestroy {
     timer$: Observable<number> = new Observable();
     size$: Observable<number> = new Observable();
     ids$: Observable<string[]> = new Observable();
