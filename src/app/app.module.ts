@@ -12,20 +12,17 @@ import { AppService } from './services/app/app.service';
 import { BigFloatPipe } from './pipes/big-float/big-float.pipe';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AppFormComponent,
-    AppTableComponent,
-    AppTableRowComponent,
-    AppChildTableComponent,
-    AppColumnColorComponent,
-    BigFloatPipe,
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule,
-  ],
-  providers: [AppService],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        AppFormComponent,
+        AppTableComponent,
+        AppTableRowComponent,
+        AppChildTableComponent,
+        AppColumnColorComponent,
+        BigFloatPipe,
+    ],
+    imports: [BrowserModule, FormsModule],
+    providers: [AppService],
+    bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

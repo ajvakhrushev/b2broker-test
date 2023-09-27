@@ -8,7 +8,10 @@
     <div class="body">
         <div *ngIf="data" class="row">
             <div class="column">{{data.id}}</div>
-            <app-column-color class="column" [color]="data.color"></app-column-color>
+            <app-column-color
+                class="column"
+                [color]="data.color"
+            ></app-column-color>
         </div>
     </div>
 </div>

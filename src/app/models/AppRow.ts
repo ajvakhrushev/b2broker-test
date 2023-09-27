@@ -1,12 +1,12 @@
-import { BigFloat32, BigFloat53 } from "bigfloat";
-import { IAppChild } from "./AppChild";
+import { BigFloat32 } from "bigfloat";
+import { AppChild } from "./AppChild";
 
 export interface IAppRow {
     id: string;
     int: bigint;
     float: BigFloat32;
     color: string;
-    child: IAppChild;
+    child: AppChild;
 }
 
 export interface IAppServerRow {
@@ -14,7 +14,7 @@ export interface IAppServerRow {
     int: string;
     float: string;
     color: string;
-    child: IAppChild;
+    child: AppChild;
 }
 
 export class AppRow implements IAppRow {
@@ -23,6 +23,6 @@ export class AppRow implements IAppRow {
         public int: bigint,
         public float: BigFloat32,
         public color: string,
-        public child: IAppChild
+        public child: AppChild
     ) {}
 }

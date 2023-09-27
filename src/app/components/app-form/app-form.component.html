@@ -23,7 +23,7 @@
     <input
         type="text"
         name="ids"
-        pattern="[\d\,]"
+        pattern="^[\d|/,]+$"
         class="column__control"
         [ngModel]="ids.join(',')"
         (ngModelChange)="onIdsModelChange($event)"
