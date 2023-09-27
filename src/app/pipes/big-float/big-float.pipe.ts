@@ -6,6 +6,6 @@ import { BigFloat32 } from 'bigfloat';
 })
 export class BigFloatPipe implements PipeTransform {
     transform(value: BigFloat32): string {
-        return value.toString(10).substring(0, 20);
+        return value ? value.toString(10).substring(0, 20) : '';
     }
 }

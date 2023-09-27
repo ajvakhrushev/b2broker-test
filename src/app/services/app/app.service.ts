@@ -45,7 +45,7 @@ export class AppService {
     }
 
     destroyWorker(): void {
-        this.worker.terminate();
+        this.worker?.terminate();
 
         delete this.worker;
     }
